@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo PWA</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <button class="menu-btn">☰</button>
+    <h1>ToDo PWA</h1>
+  </nav>
+  
+  <!-- Side Menu (hidden by default) -->
+  <div class="side-menu">
+    <button class="close-btn">×</button>
+    <a href="index.html" class="menu-item">Home</a>
+    <a href="profile.html" class="menu-item">Profile</a>
+    <a href="blog.html" class="menu-item">Blog</a>
+  </div>
+  
+  <!-- Main Content -->
+  <main>
+    <section class="hero">
+      <h2>Your Productive Companion</h2>
+      <p>Organize your tasks efficiently</p>
+    </section>
+    
+    <section class="features">
+      <div class="feature-card" id="new-list-btn">
+        <h3>Create New List</h3>
+        <p>Start organizing your tasks</p>
+      </div>
+      <div class="feature-card">
+        <h3>View All Tasks</h3>
+        <p>See everything at a glance</p>
+      </div>
+    </section>
+    
+    <!-- ToDo List Section (initially hidden) -->
+    <section class="todo-section hidden">
+      <div class="todo-header">
+        <h2 class="todo-title">My ToDo List</h2>
+        <button class="back-btn">← Back</button>
+      </div>
+      
+      <div class="todo-input">
+        <input type="text" id="todo-input" placeholder="Add a new task...">
+        <button id="add-btn">+</button>
+      </div>
+      
+      <ul class="todo-list">
+        <!-- Tasks will be added here dynamically -->
+      </ul>
+    </section>
+  </main>
+  
+  <script src="app.js"></script>
+</body>
+</html>
